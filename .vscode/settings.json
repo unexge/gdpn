@@ -1,0 +1,10 @@
+{
+  "python.pythonPath": "venv/bin/python",
+  "python.linting.pylintArgs": [
+    "--errors-only",
+    "--generated-members=numpy.*,torch.*"
+  ],
+  "python.formatting.provider": "yapf",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 4
+}

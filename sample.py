@@ -23,7 +23,7 @@ def sample(model: CharRNN, vocab: Vocab) -> str:
         pred = ''
 
         for _ in range(8):
-            out, h = model(input, hidden)
+            out, hidden = model(input, hidden)
 
             if out.view(-1).div(0.8).exp().sum() == 0:
                 continue
